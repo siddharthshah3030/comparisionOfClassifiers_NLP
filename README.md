@@ -37,7 +37,8 @@ you're set to compare them on other datasets as well
 
 ### Results 
 
-result is based on given dataset 
+result is based on given dataset
+all values are in percentage 
 
 | Classifier| Accuracy | Precision | Recall | F1Score |
 | ------ | ------ | ----- | ------- | ------ |
