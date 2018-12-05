@@ -23,14 +23,13 @@ from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(max_features=1500)
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:,1].values 
-
+print("svm upper body here")
     
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20,random_state = 0)
-
-#def svm(x_train, y_train, x_text, y_test):
 def svm():
-    print("hello svm here")
+    #def svm(x_train, y_train, x_text, y_test):
+    print("svm classifier ")
     # Fitting SVM classifier to the Training set
     from sklearn.svm import SVC
     classifier = SVC(kernel='linear', random_state=0)
@@ -42,4 +41,4 @@ def svm():
     # Making the confusion Matrix
     from sklearn.metrics import confusion_matrix
     cm = confusion_matrix(y_test, y_pred)
-    return confusion_matrix(y_test, y_pred)
+    return confusion_matrix(y_test, y_pred) 

@@ -41,27 +41,25 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20,random_
 
 
 import KNNNLP
-%run KNNNLP.py
+cm = KNNNLP.knn(X,y)
 printf(cm)
 
 import decisionTreeNLP
-%run decisionTreeNLP.py
+cm = decisionTreeNLP.decisiontree()
 printf(cm)
 
 import naiveBayesNLP
-%run naiveBayesNLP.py
+cm = naiveBayesNLP.naivebayes()
 printf(cm)
 
 import SGDNLP
-%run SGDNLP.py
+cm = SGDNLP.sgd()
 printf(cm)
 
 import SVMNLP
 cm = SVMNLP.svm()
-
-#%run SVMNLP.py
 printf(cm)
 
 import randomForestNLP
-%run randomForestNLP.py
+cm = randomForestNLP.randomforest()
 printf(cm)
