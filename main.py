@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd 
 
-dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter='\t', quoting = 3)
+dataset = pd.read_csv('dataset.tsv', delimiter='\t', quoting = 3)
 
 def printf(cm):
     TP = cm[1][1]
