@@ -36,26 +36,32 @@ cv = CountVectorizer(max_features=1500)
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:,1].values 
 
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20,random_state = 0)
+
+
 import KNNNLP
 %run KNNNLP.py
 printf(cm)
 
-import decisiontreeNLP
+import decisionTreeNLP
 %run decisionTreeNLP.py
 printf(cm)
 
-import NaivesBayesNLP
-%run NaivesBayesNLP.py
+import naiveBayesNLP
+%run naiveBayesNLP.py
 printf(cm)
 
 import SGDNLP
-%run KNNNLP.py
+%run SGDNLP.py
 printf(cm)
 
-import KNNNLP
-%run KNNNLP.py
+import SVMNLP
+cm = SVMNLP.svm()
+
+#%run SVMNLP.py
 printf(cm)
 
-import KNNNLP
-%run KNNNLP.py
+import randomForestNLP
+%run randomForestNLP.py
 printf(cm)
