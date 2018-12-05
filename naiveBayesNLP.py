@@ -28,6 +28,8 @@ y = dataset.iloc[:,1].values
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20,random_state = 0)
 def naivebayes():
+    print("naive bayes classifier :")
+
     # Fitting classifier to the Training set
     from sklearn.naive_bayes import GaussianNB
     classifier = GaussianNB()

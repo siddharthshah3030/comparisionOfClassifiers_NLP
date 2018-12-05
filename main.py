@@ -13,7 +13,7 @@ def printf(cm):
     Precision = TP / (TP + FP)
     Recall = TP / (TP + FN)
     F1_score = 2 * Precision * Recall / (Precision + Recall)
-    print('accuracy =', Accuracy, ' ,precision =',Precision,' ,Recall =', Recall, ' F1Score ' ,F1_score)
+    print('accuracy =', Accuracy, ' precision =',Precision,' Recall =', Recall, ' F1Score ' ,F1_score)
 
 #cleaning 
 import re
