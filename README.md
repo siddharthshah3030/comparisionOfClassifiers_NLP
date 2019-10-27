@@ -1,6 +1,7 @@
 # comparision Of Classifier On Reviews
 #### NLP
 
+[data set](https://raw.githubusercontent.com/siddharthshah3030/comparisionOfClassifiers_NLP/master/dataset.tsv)
 program to compare various classifiers on datasets based on
 
   - accuracy
